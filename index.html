@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/styles/accueil.css" rel="stylesheet">
+    <title>Transport à Strasbourg</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img class="icone-nav" src="assets/svg/accueil.svg" alt="Icone accueil">Accueil</a>
+            <a href="#"><img class="icone-nav" src="assets/svg/deplacement.svg" alt="Icone train">Se déplacer</a>
+            <a href="#"><img class="icone-nav" src="assets/svg/boutique.svg" alt="Icone boutique">E-boutique</a>
+            <a href="#"><img class="icone-nav" src="assets/svg/news.svg" alt="Icone news">Actualités</a>
+            <a href="#"><img class="icone-nav" src="assets/svg/entreprise.svg" alt="Icone entreprise">L'entreprise
+                CTS</a>
+            <span class="spacer"></span>
+            <div id="lang">
+                <img class="icone-nav" src="assets/svg/francais.svg" alt="francais">
+                <img class="icone-nav" src="assets/svg/allemand.svg" alt="allemand">
+                <img class="icone-nav" src="assets/svg/anglais.svg" alt="anglais">
+            </div>
+            <a href="#"><img class="icone-nav" src="assets/svg/utilisateur.svg" alt="Icone accueil">Mon compte</a>
+        </nav>
+    </header>
+    <div id="main-layout">
+        <aside>
+            <div class="box">
+                <img src="assets/svg/tempsreel.svg" alt="Horloge">
+                <br>
+                Temps réel
+            </div>
+            <div class="box">
+                <img src="assets/svg/horaires.svg" alt="Calendrier">
+                <br>
+                Horaires
+            </div>
+            <div class="box">
+                <img src="assets/svg/plan.svg" alt="Plans">
+                <br>
+                Plans
+            </div>
+            <div class="box">
+                <img src="assets/svg/trafic.svg" alt="Feu tricolore">
+                <br>
+                Info trafic
+            </div>
+            <div class="box">
+                <img src="assets/svg/ticket.svg" alt="Ticket">
+                <br>
+                Tarif
+            </div>
+            <div class="box">
+                <img src="assets/svg/amende.svg" alt="Amende">
+                <br>
+                Amende
+            </div>
+            <div class="full-box">
+                Espace presse
+            </div>
+            <div class="full-box">
+                Service en ligne
+            </div>
+            <div class="full-box" id="news-box">
+                Actualité
+                <hr>
+                <section id="news">
+                    <article>
+                        MOUVEMENT DE GRÈVE RECONDUCTIBLE<br />A partir du lundi 15 février 2021
+                    </article>
+                    <article>
+                        VÉLOS AUTORISÉS À BORD DES TRAMS AVANT 7H ET APRÈS 19H DU LUNDI AU SAMEDI ET LE DIMANCHE TOUTE
+                        LA JOURNÉE <br />A compter du lundi 1er février 2021
+                    </article>
+                    <article>
+                        COVID 19 - PORT DU MASQUE CHIRURGICAL OU FFP2 OU KN95 OU N95 OBLIGATOIRE EN ALLEMAGNE<br />A
+                        partir du lundi 25 janvier 2021
+                    </article>
+                    <article>
+                        COUVRE-FEU : MODIFICATION DES HORAIRES D'OUVERTURE DE L'AGENCE COMMERCIALE<br />A partir du
+                        lundi 11 janvier 2021
+                    </article>
+                    <article>
+                        MODIFICATION DES HORAIRES TER<br />A partir du lundi 4 janvier 2021
+                    </article>
+                </section>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <article>
+                    <h1>Recherche d'itinéraires</h1>
+                    <form action="index.html" method="GET" id="recherche-itineraire">
+                        <div id="form-depart">
+                            <label for="depart">Départ</label>
+                            <input type="text" id="depart">
+                        </div>
+                        <div id="form-arrivee">
+                            <label for="arrivee">Arrivée</label>
+                            <input type="text" id="arrivee">
+                        </div>
+                        <div id="form-date">
+                            <label for="date-travel">Arrivée</label>
+                            <input type="datetime-local" id="date-travel" name="date-travel">
+                        </div>
+                        <div id="form-option">
+                            <label for="option">Option</label>
+                            <select>
+                                <option value="fast">Le plus rapide</option>
+                                <option value="lazy">Le moins de changement</option>
+                            </select>
+                        </div>
+                        <button id="rechercher" type="submit">Rechercher</button>
+                    </form>
+                </article>
+                <article id="flash-info">
+                    <div class="flash">
+                        Port du masque obligatoire sur l'ensemble du réseau de Strasbourg !
+                    </div>
+                    <div class="attention">
+                        En raison d’un mouvement de grève chez notre prestataire Keolis Striebig,
+                        les horaires communiqués par la recherche d’itinéraires pour les lignes 12, 22, 27, 31, 42, 43,
+                        45, 62, 63, 64 et les renforts des lignes 260/270 sont potentiellement erronés.<br>
+                        Les données peuvent varier en fonction de l'évolution du mouvement social. <br>
+                        Retrouvez les prévisions théoriques de trafic sur notre page "Actualités".<br>
+                        Suivez-nous sur Twitter @CTS_Infostrafic pour connaître l'état du réseau en temps réel
+                        (également disponible sur notre site, rubrique Infos Trafic).<br>
+                        Les horaires de passage en temps réel des bus à votre arrêt sont consultables sur la page "Temps
+                        réel" de notre site.<br>
+                        Nous vous remercions pour votre compréhension.
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section id="seconde-section">
+                <article>
+                    <h2>PLUS QU'UN SIMPLE OPÉRATEUR DE TRANSPORT PUBLIC,<br>
+                        LA CTS OEUVRE QUOTIDIENNEMENT,<br>
+                        POUR RÉPONDRE AUX BESOINS DE MOBILITÉ<br>
+                        DES HABITANTS DE L'EUROMÉTROPOLE DE STRASBOURG</h2>
+                </article>
+                <article id="decouverte">
+                    <a class="decouverte-button" href="#">Découvrir les plans du réseau</a>
+                    <a class="decouverte-button" href="#">Découvrir nos bus et tram événementiels</a>
+                    <a class="decouverte-button" href="#">Découvrir la CTS, opérateur responsable</a>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
